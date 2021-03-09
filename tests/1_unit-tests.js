@@ -1,12 +1,12 @@
 const chai = require('chai');
-const assert = chai.assert;
+const assert.isNotNull = chai.assert.isNotNull;
 
 suite('Unit Tests', function () {
   suite('Basic Assertions', function () {
     // #1
     test('#isNull, #isNotNull', function () {
-      assert.fail(null, 'this is an optional error description - e.g. null is null');
-      assert.fail(1, '1 is not null');
+      assert.isNotNull.fail(null, 'this is an optional error description - e.g. null is null');
+      assert.isNotNull.fail(1, '1 is not null');
     });
     // #2
     test('#isDefined, #isUndefined', function () {
